@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Currency Converter</title>
+  </head>
+  <body>
+    <div
+      class="container-fluid rounded-5 shadow-lg w-50 mt-5 p-5 d-flex flex-column justify-content-center align-content-center"
+    >
+      <h1>Currency Convertor</h1>
+      <div class="container p-4">
+        <h2>Convert LRD and USD</h2>
+        <div class="input-group">
+          <input
+            type="number"
+            id="lrd_usd"
+            class="form-control"
+            placeholder="Amount"
+          />
+
+          <input
+            type="text"
+            id="lrd"
+            class="form-control text-success fw-bold"
+            placeholder=""
+          />
+        </div>
+        <button
+          type="button"
+          onclick="convertToUsd()"
+          class="btn btn-secondary m-3"
+        >
+          Convert to USD
+        </button>
+        <button
+          type="button"
+          onclick="convertToLrd()"
+          class="btn btn-secondary m-3"
+        >
+          Convert to LRD
+        </button>
+      </div>
+      <div class="container p-4">
+        <h2>Convert NGN and USD</h2>
+        <div class="input-group">
+          <input
+            type="number"
+            id="ngn_usd"
+            class="form-control"
+            placeholder="Amount"
+          />
+
+          <input
+            type="text"
+            id="niara"
+            class="form-control text-success fw-bold"
+            placeholder=""
+          />
+        </div>
+        <button
+          type="button"
+          onclick=" convertNiaraToUsd()"
+          class="btn btn-secondary m-3"
+        >
+          Convert to USD
+        </button>
+        <button
+          type="button"
+          onclick="convertToNgn()"
+          class="btn btn-secondary m-3"
+        >
+          Convert to NGN
+        </button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
